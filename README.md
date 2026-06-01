@@ -3,6 +3,7 @@
 A Full Stack Grocery Store Management System built using HTML, CSS, JavaScript, Python Flask, and MySQL.
 
 ![GSMS Dashboard](./Screenshot%202026-06-01%20112840.png)
+![Uploading Screenshot 2026-06-01 112840.png…]()
 
 ---
 
