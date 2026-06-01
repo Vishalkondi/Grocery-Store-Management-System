@@ -2,84 +2,85 @@
 
 A Full Stack Grocery Store Management System built using HTML, CSS, JavaScript, Python Flask, and MySQL.
 
-Screenshot 2026-06-01 112840.png
+![GSMS Dashboard](homepage.JPG)
+
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
 The Grocery Store Management System helps store owners manage:
 
-- Products
-- Orders
-- Inventory
-- Revenue Tracking
+* 📦 Products
+* 🛒 Orders
+* 📊 Inventory
+* 💰 Revenue Tracking
 
-This project demonstrates how modern full-stack applications are developed using frontend, backend, and database technologies.
-
----
-
-## 🚀 Features
-
-### Dashboard
-
-- Modern responsive UI
-- Grocery store banner
-- Product statistics
-- Order statistics
-- Revenue tracking
-
-### Product Management
-
-- Add Products
-- Delete Products
-- View Product List
-- Unit of Measurement (Kg, Litre, Piece)
-
-### Order Management
-
-- Create Orders
-- Select Products
-- Calculate Total Amount
-- Store Orders in Database
-
-### Backend APIs
-
-- Get Products
-- Add Products
-- Delete Products
-- Get Orders
-- Create Orders
-- Get UOM
+This project demonstrates how a complete software system is built using Frontend, Backend, APIs, and Database technologies.
 
 ---
 
-## 🛠️ Tech Stack
+# 🚀 Features
 
-### Frontend
+## Dashboard
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- JavaScript
-- jQuery
+* Modern Responsive UI
+* Product Statistics
+* Order Statistics
+* Revenue Tracking
+* Professional Admin Dashboard
 
-### Backend
+## Product Management
 
-- Python
-- Flask
+* Add Products
+* Delete Products
+* View Product List
+* Manage Product Units
 
-### Database
+## Order Management
 
-- MySQL
+* Create New Orders
+* Select Multiple Products
+* Calculate Total Amount
+* Store Orders in Database
 
-### Version Control
+## Backend APIs
 
-- Git
-- GitHub
+* Get Products
+* Add Product
+* Delete Product
+* Get Orders
+* Create Order
+* Get Units of Measurement
 
 ---
 
-## 📂 Project Structure
+# 🛠️ Tech Stack
+
+## Frontend
+
+* HTML5
+* CSS3
+* Bootstrap
+* JavaScript
+* jQuery
+
+## Backend
+
+* Python
+* Flask
+
+## Database
+
+* MySQL
+
+## Version Control
+
+* Git
+* GitHub
+
+---
+
+# 📂 Project Structure
 
 ```text
 Grocery-Store-Management-System
@@ -99,21 +100,22 @@ Grocery-Store-Management-System
 │   ├── images
 │   └── js
 │
+├── homepage.JPG
 ├── README.md
-└── homepage.JPG
+└── .gitignore
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/Vishalkondi/Grocery-Store-Management-System.git
 ```
 
-### Navigate to Project
+## Navigate to Project
 
 ```bash
 cd Grocery-Store-Management-System
@@ -121,7 +123,7 @@ cd Grocery-Store-Management-System
 
 ---
 
-## 🗄️ MySQL Setup
+# 🗄️ Database Setup
 
 Create Database:
 
@@ -130,9 +132,7 @@ CREATE DATABASE grocery_store;
 USE grocery_store;
 ```
 
-Create Tables:
-
-### UOM Table
+### Create UOM Table
 
 ```sql
 CREATE TABLE uom(
@@ -141,7 +141,7 @@ uom_name VARCHAR(50)
 );
 ```
 
-### Products Table
+### Create Products Table
 
 ```sql
 CREATE TABLE products(
@@ -152,7 +152,7 @@ price_per_unit DOUBLE
 );
 ```
 
-### Orders Table
+### Create Orders Table
 
 ```sql
 CREATE TABLE orders(
@@ -163,7 +163,7 @@ datetime DATETIME
 );
 ```
 
-### Order Details Table
+### Create Order Details Table
 
 ```sql
 CREATE TABLE order_details(
@@ -176,11 +176,11 @@ total_price DOUBLE
 
 ---
 
-## 🔧 Configure Database
+# 🔧 Configure Database
 
 Update:
 
-```python
+```text
 backend/sql_connection.py
 ```
 
@@ -193,7 +193,7 @@ database="grocery_store"
 
 ---
 
-## ▶️ Run Backend
+# ▶️ Run Backend
 
 Install Dependencies:
 
@@ -203,7 +203,7 @@ pip install flask-cors
 pip install mysql-connector-python
 ```
 
-Start Server:
+Start Flask Server:
 
 ```bash
 cd backend
@@ -218,7 +218,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🌐 Run Frontend
+# 🌐 Run Frontend
 
 Open:
 
@@ -228,8 +228,8 @@ ui/index.html
 
 Recommended:
 
-- Install Live Server Extension in VS Code
-- Right Click → Open With Live Server
+* Install Live Server Extension
+* Right Click → Open With Live Server
 
 Frontend:
 
@@ -239,7 +239,7 @@ http://127.0.0.1:5500
 
 ---
 
-## 🔌 API Endpoints
+# 🔌 API Endpoints
 
 ### Get Products
 
@@ -253,7 +253,7 @@ GET /getProducts
 GET /getUOM
 ```
 
-### Create Product
+### Insert Product
 
 ```http
 POST /insertProduct
@@ -271,7 +271,7 @@ POST /deleteProduct
 GET /getAllOrders
 ```
 
-### Create Order
+### Insert Order
 
 ```http
 POST /insertOrder
@@ -279,37 +279,29 @@ POST /insertOrder
 
 ---
 
-## 📸 Screenshots
-
-### Dashboard
-
-![Dashboard](./Screenshot%202026-06-01%20112840.png)
-
----
-
-## 🎯 Learning Outcomes
+# 🎯 Learning Outcomes
 
 This project demonstrates:
 
-- Full Stack Development
-- REST APIs
-- Flask Backend
-- MySQL Database Design
-- CRUD Operations
-- AJAX Requests
-- Frontend & Backend Integration
-- Git & GitHub Workflow
+* Full Stack Development
+* Flask REST APIs
+* MySQL Database Design
+* CRUD Operations
+* AJAX Requests
+* Frontend & Backend Integration
+* Git & GitHub Workflow
+* Real World Project Structure
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Vishal Kondi**
 
-- Full Stack Developer
-- Frontend Developer
-- React.js Developer
-- Python Flask Developer
+* Full Stack Developer
+* Frontend Developer
+* React Developer
+* Python Flask Developer
 
 GitHub:
 
@@ -317,6 +309,6 @@ https://github.com/Vishalkondi
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
 If you found this project useful, please give it a ⭐ on GitHub.
